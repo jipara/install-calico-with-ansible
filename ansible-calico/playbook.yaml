@@ -1,0 +1,6 @@
+---
+- name: install calico
+  hosts: localhost
+  roles:
+    - calico
+    

@@ -1,0 +1,7 @@
+---
+
+- name: install calico operator
+  shell: "kubectl apply -f https://raw.githubusercontent.com/aws/amazon-vpc-cni-k8s/master/config/master/calico-operator.yaml"
+
+- name: install calico source
+  shell: "kubectl apply -f https://raw.githubusercontent.com/aws/amazon-vpc-cni-k8s/master/config/master/calico-crs.yaml"
